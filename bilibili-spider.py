@@ -60,7 +60,6 @@ def download_B(bv):
 
     # 使用ffmpeg将视频和音频进行合并
     os.system(f"ffmpeg -i temp_audio.m4s -i temp_video.m4s -codec copy {name}.mp4")
-    # os.system(f"ffmpeg -i temp_audio.m4s -i temp_video.m4s -codec copy '{name}.mp4'")
     os.remove("temp_audio.m4s")
     os.remove("temp_video.m4s")
     print("下载成功！！！" , name)
